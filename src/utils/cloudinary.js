@@ -3,9 +3,6 @@ import fs from "fs";
 
 const { v2: cloudinary } = cloudinaryPkg;
 
-console.log("API KEY RAW:", process.env.CLOUDINARY_API_KEY);
-console.log("TYPE:", typeof process.env.CLOUDINARY_API_KEY);
-console.log("LENGTH:", process.env.CLOUDINARY_API_KEY?.length);
 
 cloudinary.config({
     cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
